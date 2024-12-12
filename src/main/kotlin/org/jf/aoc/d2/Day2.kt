@@ -8,22 +8,21 @@ fun main() {
     twoStar(input)
 }
 
-fun twoStar(input: String) {
-    val result = input.lines()
-        .map { line ->
-            line.split("\\s+".toRegex()).map { it.toInt() }
-        }
-        .count { it.isSafe() }
-    println(result)
-}
-
 fun oneStar(input: String) {
     val result = input.lines()
         .map { line ->
             line.split("\\s+".toRegex()).map { it.toInt() }
         }
         .count { it.hasSmallEnoughDifferences() || it.reversed().hasSmallEnoughDifferences() }
+    println(result)
+}
 
+fun twoStar(input: String) {
+    val result = input.lines()
+        .map { line ->
+            line.split("\\s+".toRegex()).map { it.toInt() }
+        }
+        .count { it.isSafe() }
     println(result)
 }
 
