@@ -1,3 +1,5 @@
+package org.jf.aoc.d8
+
 import org.jf.aoc.utils.elementPairs
 import org.jf.aoc.utils.isInBoundaries
 import org.jf.aoc.utils.readFile
