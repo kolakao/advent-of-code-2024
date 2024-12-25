@@ -20,3 +20,12 @@ fun <T> List<T>.elementPairs(): Sequence<Pair<T, T>> = sequence {
 fun Pair<Int, Int>.isInBoundaries(boundaries: Pair<Int, Int>): Boolean {
     return (this.first >= 0 && this.first < boundaries.first) && (this.second >= 0 && this.first < boundaries.second)
 }
+
+fun <T> List<List<T>>.print() {
+    this.forEach {
+        this.forEach {
+            print("${it},")
+        }
+        println()
+    }
+}
