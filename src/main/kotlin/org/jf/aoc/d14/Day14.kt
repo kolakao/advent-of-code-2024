@@ -1,6 +1,5 @@
 package org.jf.aoc.d14
 
-import org.jf.aoc.utils.print
 import org.jf.aoc.utils.readFile
 import java.util.stream.IntStream
 import kotlin.math.abs
